@@ -120,10 +120,42 @@ class ViewController: UIViewController {
         }
         
         
-//        for var i = 0; i < 20; i += 1{
+//        for var i = 0; 0...20; i += 1{
 //            print(i)
 //        }
         
+        for a  in 0...10 {
+            print(a)
+        }
+        
+        for _ in 0...20 {
+            print("不需要下标")
+        }
+        
+        let string = "abcdefghijklmnopqrastuvwxyz"
+        let string1 = "1234567890"
+        let newstring = string + string1
+        print(newstring)
+        
+        
+        let age = 18;
+        let sexs = "男"
+        let str = "my name \(age), my sex \(sexs)"
+        print(str);
+        
+        let  minute  = 10
+        let second = 10
+        
+       let time = String(format: "%02d:%02d", arguments:[minute, second])
+        print(time)
+        
+//        字符串的截取
+        let url = "www.baidu.com"
+       let header = (url as NSString).substring(to: 3)
+        let mid = (url as NSString).substring(with: NSMakeRange(4, 5))
+        let foot = (url as NSString).substring(from: 10
+        )
+        print("url header \(header), url mid \(mid), url foot \(foot)")
         
         // Do any additional setup after loading the view, typically from a nib.
     }
